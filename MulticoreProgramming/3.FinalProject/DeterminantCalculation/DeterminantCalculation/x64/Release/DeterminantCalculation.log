@@ -1,0 +1,6 @@
+﻿  DeterminantCalculation_parallel.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  Generating code
+  All 374 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  DeterminantCalculation.vcxproj -> D:\University\semester6\MulticoreProgramming\HW\FinalProject\Final_Files\DeterminantCalculation\x64\Release\DeterminantCalculation.exe

@@ -1,0 +1,51 @@
+﻿  DeterminantCalculation.cpp
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\DeterminantCalculation\DeterminantCalculation.cpp(16): warning #3180: unrecognized OpenMP #pragma
+    #pragma omp parallel for
+    ^
+  
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\DeterminantCalculation\DeterminantCalculation.cpp(28): warning #3180: unrecognized OpenMP #pragma
+    #pragma omp parallel for
+    ^
+  
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\DeterminantCalculation\DeterminantCalculation.cpp(54): warning #3180: unrecognized OpenMP #pragma
+    #pragma omp parallel sections num_threads( 16 )
+    ^
+  
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\DeterminantCalculation\DeterminantCalculation.cpp(58): warning #3180: unrecognized OpenMP #pragma
+    #pragma omp section
+    ^
+  
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\DeterminantCalculation\DeterminantCalculation.cpp(60): warning #3180: unrecognized OpenMP #pragma
+    #pragma omp parallel for num_threads( 8 )
+    ^
+  
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\DeterminantCalculation\DeterminantCalculation.cpp(79): warning #3180: unrecognized OpenMP #pragma
+    #pragma omp section 
+    ^
+  
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\DeterminantCalculation\DeterminantCalculation.cpp(81): warning #3180: unrecognized OpenMP #pragma
+    #pragma omp parallel for num_threads( 8 )
+    ^
+  
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\DeterminantCalculation\DeterminantCalculation.cpp(105): warning #3180: unrecognized OpenMP #pragma
+    #pragma omp parallel for
+    ^
+  
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\DeterminantCalculation\DeterminantCalculation.cpp(128): warning #3180: unrecognized OpenMP #pragma
+    #pragma omp parallel for reduction(*:det)
+    ^
+  
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\DeterminantCalculation\DeterminantCalculation.cpp(186): warning #3180: unrecognized OpenMP #pragma
+    #pragma omp parallel
+    ^
+  
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\DeterminantCalculation\DeterminantCalculation.cpp(188): warning #3180: unrecognized OpenMP #pragma
+    #pragma omp single nowait
+    ^
+  
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\DeterminantCalculation\DeterminantCalculation.cpp(190): warning #3180: unrecognized OpenMP #pragma
+    #pragma omp for
+    ^
+  
+DeterminantCalculation.obj : : error LNK2019: unresolved external symbol _omp_set_num_threads referenced in function _main
+D:\University\semester6\MulticoreProgramming\HW\FinalProject\DeterminantCalculation\Debug\DeterminantCalculation.exe : : error LNK1120: 1 unresolved externals
