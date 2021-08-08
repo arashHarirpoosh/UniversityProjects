@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myGithub-Arash Harirpoosh-9731505</title>
+    <link rel="stylesheet" href="styles/view.css">
+</head>
+<body class="body">
+<h1> My Github </h1>
+<div class="flex-get-user">
+    <div class="title-part">
+        Get github username
+    </div>
+    <div class="input-part">
+        <label for="get_username">Write the github username</label>
+        <textarea id="get_username" name="get_username" class="username_textarea"></textarea>
+    </div>
+    <div class="submit_part">
+        <button class="button" id="submit_btn">
+            submit
+        </button>
+    </div>
+    <div class="msg-part" id="msg"></div>
+</div>
+
+<div class="grid-container">
+    <div class="user_pic">
+        <img src="styles\img\avatarlogo.png" alt="avatar logo" height="125" id="avatar_img">
+    </div>
+    <div class="name_info" id="personal-information">
+        <p>name family-name</p>
+    </div>
+    <div class="bio_info" id="bio_information">
+        <p>bio info</p>
+    </div>
+
+</div>
+
+<script src="controller/page_controller.js"></script>
+
+</body>
+</html>

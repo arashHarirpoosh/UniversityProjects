@@ -1,0 +1,259 @@
+
+/*
+    Set the background of the HTML page and then set 100% for it's height to cover the page
+ */
+html {
+    background: url("img/bg7.jpg")  no-repeat center bottom/cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/*
+    Change the color of the h1 tag and then change the alignment of the text to the center
+     so that the content of this tag will be printed in the center of the page
+ */
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+/*
+    Make the corner of the image rounded by setting the border-radius value
+     and then set the height and width of the image
+ */
+img {
+    border-radius:2em;
+    vertical-align: middle;
+    width: 18vh;
+    height: 18vh;
+
+}
+
+
+/*
+    Design a button for submitting the github username
+ */
+.button {
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color: cadetblue;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    width: 50%;
+    font-size: 1.2vw;
+}
+
+
+/*
+    Change the color of the button when the pointer is on the button
+ */
+.button:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+
+/*
+    Change the color of the button when the button is clicked
+ */
+.button:active {
+    background-color: darkslategrey;
+    color: white;
+}
+
+
+/*
+    Design a text area for getting the github username
+ */
+.username_textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    align-items: center;
+}
+
+
+/*
+    This is the design of the first item in the flex container
+    The title of the container placed in this item
+    Set the font-size to 2vw so that the font size of the text written in this part
+     will be varied based on the size of the page
+ */
+.title-part {
+    flex: 20%;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 10%;
+}
+
+
+/*
+    This is the design of the second item in the flex container
+    The textarea and label of it placed in this item
+ */
+.input-part {
+    flex: 10%;
+    color: antiquewhite;
+    text-align: left;
+    font-size: 1vmax;
+    padding: 5%;
+}
+
+
+/*
+    This is the design of the third item in the flex container
+    The submit button placed in this item
+ */
+.submit_part {
+    flex: 10%;
+    color: lightslategray;
+    text-align: center;
+}
+
+
+/*
+    This is the design of the fourth item in the flex container
+    Errors, loading bar or other messages will be appeared in this item
+ */
+.msg-part {
+    flex: 60%;
+    font-size: 1.2vw;
+    text-align: left;
+    padding: 1% 5%;
+}
+
+
+/*
+    This is the design of the vertical flex container in which I get the github username from it
+
+ */
+.flex-get-user {
+    border-radius:2em;
+    border: 5px solid rgba(52, 73, 94, 1);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 7%;
+    top: 30%;
+    width: 20%;
+    height: 40%;
+    background-color: rgba(5, 21, 50, 0.5);
+}
+
+
+/*
+    This is the design of the first grid item in grid container
+     in which picture of the github user will be placed in here
+    This item placed in the first column and row
+ */
+.user_pic {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+/*
+    This is the design of the second grid item in grid container
+     in which personal information of the github user will be placed in here
+    This item started from column 2 and row 1 and contains 15 columns
+    Set the font-size to 1.2vw so that the font of the texts written in this block will be changed
+     based on the size of the page
+ */
+.name_info {
+    font-size: 1.2vw;
+    grid-column: 2 / span 15;
+    grid-row: 1;
+    text-align: center;
+}
+
+
+/*
+    This is the design of the third grid item in grid container
+    In which bio information of the github user will be placed in here
+    This item started from column 1 and row 2 and contains 16 columns and 10 rows
+    Set the font-size to 1.2vw so that the font of the texts written in this block will be changed
+     based on the size of the page
+ */
+.bio_info {
+    font-size: 1.2vw;
+    grid-column: 1 / span 16;
+    grid-row: 2 / span 10;
+    padding: 2%;
+
+}
+
+
+/*
+    This is the design of the grid container in which the github user information will be placed in here
+ */
+.grid-container {
+    border-radius:2em;
+    border: 5px solid rgba(52, 73, 94, 1);
+    color: antiquewhite;
+    position: absolute;
+    left: 7%;
+    top: 30%;
+    width: 60%;
+    height: 40%;
+    background-color: rgba(5, 21, 50, 0.5);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-flow: column;
+    gap: 10px 10px;
+}
+
+
+/*
+    Design loader for get user flex container
+ */
+.loader {
+    border: 0.5vw solid #f3f3f3; /* Light grey */
+    border-top: 0.5vw solid darkcyan;
+    border-radius: 50%;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin:auto;
+    animation: spin 1.5s linear infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/*
+    In this part the size and location of the grid and flex layout will be changed if the width of the page
+     is larger than 700px
+ */
+@media only screen and (min-width: 700px) {
+    .flex-get-user {
+        right: 18%;
+        top: 25%;
+        width: 20%;
+        height: 50%;
+    }
+
+    .grid-container {
+        left: 18%;
+        top: 25%;
+        width: 40%;
+        height: 50%;
+    }
+
+}
